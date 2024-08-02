@@ -83,12 +83,12 @@ export class WebCalendar extends EventTarget {
 }
 
 
-if (import.meta?.env?.VITE_CALENDAR_DEV) {
+
     const webCalendar = new WebCalendar();
     webCalendar.addEventListener("dayClicked", (event) => {
         console.log(event.detail);
     });
-}
+
 
 
 
